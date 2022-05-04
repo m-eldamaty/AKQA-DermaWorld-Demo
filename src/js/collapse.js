@@ -8,4 +8,12 @@ for (var i = 0; i < collapseToggle.length; i++) {
 function toggleList(clickedItem){
     var content = clickedItem.nextElementSibling;
     content.classList.toggle('shown');
+    clickedItem.classList.toggle('toggle-expanded');
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+    toggleAriaAttribute(clickedItem);
+
 }

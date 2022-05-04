@@ -13,161 +13,171 @@
     <link rel="stylesheet" href="./assets/css/app.min.css" />
   </head>
   <body class="overlay">
-    <a class="visually-hidden-focusable text-secondary" href="#content">Skip to main content</a>
+    <a class="visually-hidden-focusable text-secondary" href="#content"
+  >Skip to main content</a
+>
 
 <header class="header">
   <nav class="navigation-container">
-		<div class="container" aria-label="Main Navigation" id="navigationContainer">
-			<div class="row align-items-center">
-				<div class="col-2 toggle-menu-wrap">
-					<button class="toggle-menu" onClick="toggleMenu()">
-						<span class="visually-hidden">Toggle Menu </span>
-						<div></div>
-						<div></div>
-						<div></div>
-					</button>
-				</div>
-				<div class="col-sm-8 col-6">
-				  <a href="/" class="header-logo" title="Go to home page" aria-label="Derma World">
-					<img
-					  src="./assets/img/DermaWorld.svg"
-					  alt="Derma World Logo"
-					/>
-				  </a>
-				</div>
-				<div class="col-sm-4 col-4 header-search" id="headerSearch">
-					<input type="text" placeholder="Search.." name="Search Derma World" />
-					<button type="submit" onclick="toggleSearch()">
-					  <svg>
-						  <use xlink:href="#icon-search"></use>
-						</svg>
-						<span class="visually-hidden">Search</span>
-					</button>
-				</div>
-			  </div>
-			
-			<ul
-			class="main-nav"
-			id="mainNav"
-			aria-label="Main Navigation"
-			>
-			<li class="main-list-item">
-				<a href="javascript:void(0)">Behandlungen</a>
-			</li>
-			<li class="main-list-item has-subitems">
-				<a
-				href="javascript:void(0)"
-				aria-expanded="false"
-				aria-haspopup="true"
-				class="subitems-toggle"
-				>Behandlungen</a
-				>
-				<div class="sub-list-container">
-				<ul class="submenu-list container">
-				<li class="main-list-item has-subitems">
-					<a
-					href="javascript:void(0)"
-					aria-expanded="false"
-					aria-haspopup="true"
-					class="subitems-toggle"
-					>
-					Adtralza
-					</a>
-					<div class="sub-list-container">
-					<ul class="submenu-list container">
-					<li class="main-list-item">
-						<a href="javascript:void(0)">Overview</a>
-					</li class="main-list-item">
-					<li class="main-list-item">
-						<a href="javascript:void(0)">Mode of Action</a>
-					</li>
-					<li class="main-list-item">
-						<a href="javascript:void(0)">Efficacy</a>
-					</li>
-					<li class="main-list-item">
-						<a href="javascript:void(0)">Quality of Life</a>
-					</li>
-					<li class="main-list-item">
-						<a href="javascript:void(0)">Safety</a>
-					</li>
-					<li class="main-list-item">
-						<a href="javascript:void(0)">Dosing</a>
-					</li>
-					<li class="main-list-item">
-						<a href="javascript:void(0)">News</a>
-					</li>
-					<li class="main-list-item">
-						<a href="javascript:void(0)">Technical Information</a>
-					</li>
-					</ul>
-					</div>
-				</li>
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Diavonex </a>
-				</li>
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Diavobet </a>
-				</li>
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Enstilar </a>
-				</li>
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Fucidin </a>
-				</li>
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Kyntheum </a>
-				</li>
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Protopic </a>
-				</li>
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Skinoren </a>
-				</li>
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Tralokinumab </a>
-				</li>
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Xamiol </a>
-				</li>
-				</ul>
-			</div>
-			</li>
-			<li class="main-list-item has-subitems">
-				<a
-				href="javascript:void(0)"
-				aria-expanded="false"
-				aria-haspopup="true"
-				
-				class="subitems-toggle"
-				>Veranstaltungen</a
-				>
-				<div class="sub-list-container">
-				<ul class="submenu-list container">
-					<li class="main-list-item">
-					<a href="javascript:void(0)"> Veranstaltungen 1 </a>
-				</li class="main-list-item">
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Veranstaltungen 1 </a>
-				</li class="main-list-item">
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Veranstaltungen 1 </a>
-				</li>
-				<li class="main-list-item">
-					<a href="javascript:void(0)"> Veranstaltungen 1 </a>
-				</li>
-				</ul>
-				</div>
-			</li>
-			<li class="main-list-item ">
-				<a href="javascript:void(0)">Werkzeuge</a>
-			</li>
-			<li class="main-list-item ">
-				<a href="javascript:void(0)">Forschung und Erkenntnisse</a>
-			</li>
-			</ul>
-		</div>
-	</nav>
+    <div
+      class="container"
+      aria-label="Main Navigation"
+      id="navigationContainer"
+    >
+      <div class="row align-items-center">
+        <div class="col-2 toggle-menu-wrap">
+          <button class="toggle-menu" onClick="toggleMenu()">
+            <span class="visually-hidden">Toggle Menu </span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="col-sm-8 col-6">
+          <a
+            href="/"
+            class="header-logo"
+            title="Go to home page"
+            aria-label="Derma World"
+          >
+            <img src="./assets/img/DermaWorld.svg" alt="Derma World Logo" />
+          </a>
+        </div>
+        <div class="col-sm-4 col-4 header-search" id="headerSearch">
+          <input type="text" placeholder="Search.." name="Search Derma World" />
+          <button type="submit" onclick="toggleSearch()">
+            <svg>
+              <use xlink:href="#icon-search"></use>
+            </svg>
+            <span class="visually-hidden">Search</span>
+          </button>
+          <button type="submit" class="search-xs">
+            <svg>
+              <use xlink:href="#icon-search"></use>
+            </svg>
+            <span class="visually-hidden">Search</span>
+          </button>
+        </div>
+      </div>
+
+      <ul class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <li class="main-list-item">
+          <a href="javascript:void(0)">Behandlungen</a>
+        </li>
+        <li class="main-list-item has-subitems">
+          <a
+            href="javascript:void(0)"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="subitems-toggle"
+            >Behandlungen</a
+          >
+          <div class="sub-list-container">
+            <ul class="submenu-list container">
+              <li class="main-list-item has-subitems">
+                <a
+                  href="javascript:void(0)"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  class="subitems-toggle"
+                >
+                  Adtralza
+                </a>
+                <div class="sub-list-container">
+                  <ul class="submenu-list container">
+                    <li class="main-list-item">
+                      <a href="javascript:void(0)">Overview</a>
+                    </li>
+                    <li class="main-list-item">
+                      <a href="javascript:void(0)">Mode of Action</a>
+                    </li>
+                    <li class="main-list-item">
+                      <a href="javascript:void(0)">Efficacy</a>
+                    </li>
+                    <li class="main-list-item">
+                      <a href="javascript:void(0)">Quality of Life</a>
+                    </li>
+                    <li class="main-list-item">
+                      <a href="javascript:void(0)">Safety</a>
+                    </li>
+                    <li class="main-list-item">
+                      <a href="javascript:void(0)">Dosing</a>
+                    </li>
+                    <li class="main-list-item">
+                      <a href="javascript:void(0)">News</a>
+                    </li>
+                    <li class="main-list-item">
+                      <a href="javascript:void(0)">Technical Information</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Diavonex </a>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Diavobet </a>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Enstilar </a>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Fucidin </a>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Kyntheum </a>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Protopic </a>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Skinoren </a>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Tralokinumab </a>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Xamiol </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-list-item has-subitems">
+          <a
+            href="javascript:void(0)"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="subitems-toggle"
+            >Veranstaltungen</a
+          >
+          <div class="sub-list-container">
+            <ul class="submenu-list container">
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Veranstaltungen 1 </a>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Veranstaltungen 1 </a>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Veranstaltungen 1 </a>
+              </li>
+              <li class="main-list-item">
+                <a href="javascript:void(0)"> Veranstaltungen 1 </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-list-item">
+          <a href="javascript:void(0)">Werkzeuge</a>
+        </li>
+        <li class="main-list-item">
+          <a href="javascript:void(0)">Forschung und Erkenntnisse</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
+
     <div id="content">
       <h1 class="visually-hidden">
         DermaWorld is a portal for healthcare professionals (HCPs) from LEO
@@ -437,6 +447,7 @@
             <div class="row">
               <div class="col-sm-6 col-12">
                 <div class="videos-insights-image">
+                  <img src="./assets/img/Group 29612149.jpg"/>
                   <button class="play-icon">
                     <svg class="icon icon-sm">
                       <use xlink:href="#icon-play"></use>
@@ -458,6 +469,7 @@
             <div class="row">
               <div class="col-sm-6 col-12">
                 <div class="videos-insights-image">
+                  <img src="./assets/img/Group 29612149.jpg"/>
                   <button class="play-icon">
                     <svg class="icon icon-sm">
                       <use xlink:href="#icon-play"></use>
@@ -479,6 +491,7 @@
             <div class="row">
               <div class="col-sm-6 col-12">
                 <div class="videos-insights-image">
+                  <img src="./assets/img/Group 29612149.jpg"/>
                   <button class="play-icon">
                     <svg class="icon icon-sm">
                       <use xlink:href="#icon-play"></use>
@@ -500,6 +513,7 @@
             <div class="row">
               <div class="col-sm-6 col-12">
                 <div class="videos-insights-image">
+                  <img src="./assets/img/Group 29612149.jpg"/>
                   <button class="play-icon">
                     <svg class="icon icon-sm">
                       <use xlink:href="#icon-play"></use>
@@ -523,7 +537,12 @@
   </section>
         <div class="bg-gray-medium mt-2 py-4">
   <div class="container">
-    <button class="border-0 p-0 bg-transparent btn collapse-toggle-btn">
+    <button
+      class="border-0 p-0 bg-transparent btn collapse-toggle-btn"
+      role="button"
+      aria-expanded="false"
+      aria-controls="refrencesList"
+    >
       <svg class="icon icon-sm">
         <use xlink:href="#icon-arrow-down"></use>
       </svg>
@@ -531,16 +550,22 @@
         >Refrences</span
       >
     </button>
-    <div class="collapsed-list">
-      <ul>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-      </ul>
+    <div class="collapsed-list" id="refrencesList">
+      <div class="ps-5 py-2 mt-2 text-primary">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.
+      </div>
     </div>
   </div>
 </div>

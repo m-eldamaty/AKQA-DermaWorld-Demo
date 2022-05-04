@@ -1,6 +1,11 @@
 <div class="bg-gray-medium mt-2 py-4">
   <div class="container">
-    <button class="border-0 p-0 bg-transparent btn collapse-toggle-btn">
+    <button
+      class="border-0 p-0 bg-transparent btn collapse-toggle-btn"
+      role="button"
+      aria-expanded="false"
+      aria-controls="refrencesList"
+    >
       <svg class="icon icon-sm">
         <use xlink:href="#icon-arrow-down"></use>
       </svg>
@@ -8,16 +13,22 @@
         >Refrences</span
       >
     </button>
-    <div class="collapsed-list">
-      <ul>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-        <li>Source 1 </li>
-      </ul>
+    <div class="collapsed-list" id="refrencesList">
+      <div class="ps-5 py-2 mt-2 text-primary">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.
+      </div>
     </div>
   </div>
 </div>

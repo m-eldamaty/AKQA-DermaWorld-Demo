@@ -1,12 +1,8 @@
 .collapsed-list{
-    opacity: 0;
-    visibility: hidden;
-    height: 0;
     overflow: hidden;
-    transition: opacity ease 0.4s;
+    transition: all ease 0.4s;
+    max-height: 0;
 }
-.collapsed-list.shown{
-    opacity: 1;
-    visibility: visible;
-    height: auto;
+.toggle-expanded svg{
+    transform: rotateX(180deg);
 }
