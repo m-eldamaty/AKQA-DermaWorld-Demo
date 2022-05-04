@@ -1,0 +1,14 @@
+@include media-breakpoint-down(sm) {
+  .clinical-tools-item {
+    margin-bottom: 1.5rem;
+  }
+  .clinical-details {
+    padding: 1.5rem !important;
+  }
+}
+
+@include media-breakpoint-down(md){
+  .clinical-tools.main-section{
+    padding-bottom: 0;
+  }
+}

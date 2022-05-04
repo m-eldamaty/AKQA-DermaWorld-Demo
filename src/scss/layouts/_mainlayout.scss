@@ -1,0 +1,75 @@
+body.overlay.in {
+  overflow-y: hidden;
+  height: 100%;
+}
+.main-section {
+  padding: 3.5rem 0;
+  @include media-breakpoint-down(md) {
+    padding: 2.1rem 0;
+  }
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include media-breakpoint-up(sm) {
+  .container {
+    max-width: $container-sm;
+  }
+}
+@include media-breakpoint-up(md) {
+  body,
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: $container-md;
+  }
+}
+@include media-breakpoint-up(lg) {
+  
+body,
+html {
+  font-size: 16px;
+}
+  .container {
+    max-width: $container-lg;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .container {
+    max-width: $container-xl;
+  }
+}
+@include media-breakpoint-up(xxl) {
+  .container {
+    max-width: $container-xxl;
+  }
+}
+@include media-breakpoint-down(md) {
+  body,
+  html {
+    font-size: 12px;
+  }
+  .overlay {
+    &:before {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 69px;
+      z-index: -1;
+      opacity: 0;
+    }
+    &.in:before {
+      opacity: 1;
+      z-index:2;
+    }
+  }
+}

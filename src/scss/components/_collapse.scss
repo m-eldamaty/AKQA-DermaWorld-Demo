@@ -1,0 +1,12 @@
+.collapsed-list{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: opacity ease 0.4s;
+}
+.collapsed-list.shown{
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}

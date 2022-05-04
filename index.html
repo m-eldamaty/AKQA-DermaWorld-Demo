@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="DermaWorld is a portal for healthcare professionals (HCPs) from LEO Pharma – a global pharmaceutical company specialising in dermatology."
+    />
+    <title>Derma World</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/app.min.css" />
+  </head>
+  <body class="overlay">
+    @@include('./src/components/header.html')
+    <div id="content">
+      <h1 class="visually-hidden">
+        DermaWorld is a portal for healthcare professionals (HCPs) from LEO
+        Pharma – a global pharmaceutical company specialising in dermatology.
+      </h1>
+      <div class="main-layout">
+        @@include('./src/components/main-banner.html')
+        @@include('./src/components/how-it-works.html')
+        @@include('./src/components/more-info.html')
+        @@include('./src/components/video.html')
+        @@include('./src/components/clinical-tools.html')
+        @@include('./src/components/video-insights.html')
+        @@include('./src/components/refrences.html')
+      </div>
+      @@include('./src/components/footer.html')
+      @@include('./src/components/icons.html')
+    </div>
+    <script src="./assets/js/bundle.min.js"></script>
+  </body>
+</html>

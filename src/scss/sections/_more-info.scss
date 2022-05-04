@@ -1,0 +1,23 @@
+.more-info-icon {
+  background: url("../img/cirlce-icon.png") no-repeat;
+  width: 180px;
+  height: 180px;
+  background-size: contain;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 30px;
+  @include media-breakpoint-down(lg) {
+    margin: 0 auto 1.25rem;
+  }
+}
+.more-info-details {
+  max-width: 75%;
+  text-align: center;
+  margin: auto;
+
+  @include media-breakpoint-down(lg) {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}

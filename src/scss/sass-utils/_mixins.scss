@@ -1,0 +1,42 @@
+
+@mixin font-sizes {
+  @each $name, $size in $font-sizes-rem {
+    &#{$class-name-separator}#{$name} {
+      font-size: $size !important;
+    }
+  }
+}
+@mixin text-color {
+  @each $color, $value in $theme-colors {
+    &#{$class-name-separator}#{$color} {
+      color: $value;
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

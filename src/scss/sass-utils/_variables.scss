@@ -1,0 +1,53 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+$class-name-separator: "-";
+$font-sizes: (
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  22: 22px,
+  24: 24px,
+  28: 28px,
+  30: 30px,
+  32: 32px,
+);
+$font-sizes-rem: (
+    18: 1.125rem,
+    20: 1.25rem,
+    28: 1.75rem,
+  );
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;
+$container-xxl: 1320px;
+
+$black: #000 !default;
+$blue: #00609c !default;
+$purple: #c017a2 !default;
+$white: #ffffff !default;
+$gray-light: #eeeeee !default;
+$gray-medium: #e6e7e8 !default;
+
+
+$primary: $blue !default;
+$secondary: $purple !default;
+$gray-light: $gray-light !default;
+$gray-medium: $gray-medium !default;
+$white: $white !default;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "gray-light": $gray-light,
+  "gray-medium": $gray-medium,
+  "black": $black,
+  "white": $white,
+) !default;

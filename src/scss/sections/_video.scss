@@ -1,0 +1,6 @@
+.video-image img {
+  max-width: 100%;
+  @include media-breakpoint-down(md) {
+    margin-top: 1.5rem;
+  }
+}
