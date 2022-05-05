@@ -121,23 +121,28 @@
     > ul > li {
       padding: 1.5rem 0;
     }
-    height: 70px;
-    overflow: visible;
-    .has-subitems {
-      &.active {
-        > a:before {
-          border-bottom-color: $primary;
-        }
-        > .sub-list-container {
-          a,
-          a:visited {
-            color: $gray-light;
+  }
+  &.active {
+    > .sub-list-container {
+      height: 70px;
+      overflow: visible;
+      .has-subitems {
+        &.active {
+          > a:before {
+            border-bottom-color: $primary;
+          }
+          > .sub-list-container {
+            a,
+            a:visited {
+              color: $gray-light;
+            }
           }
         }
-      }
-      > .sub-list-container {
-        background: $primary;
-        top: 70px;
+        > .sub-list-container {
+          background: $primary;
+          top: 70px;
+          z-index: 1;
+        }
       }
     }
   }
@@ -338,9 +343,9 @@
       }
       > a {
         padding: 0.8rem 0.4rem !important;
-        &:after{
-            float: right;
-            margin-right: 0.8rem;
+        &:after {
+          float: right;
+          margin-right: 0.8rem;
         }
       }
     }

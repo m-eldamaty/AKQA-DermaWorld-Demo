@@ -14,12 +14,16 @@ function toggleSubItems(ele) {
       ele.parentElement.classList.toggle("active");
     }
   }, 100);
-  if (document.querySelectorAll("#navigationContainer .active").length > 1) {
-    document.getElementById("mainNav").classList.add("second-level-opened");
-  } else {
-    document.getElementById("mainNav").classList.remove("second-level-opened");
-  }
-  toggleAriaAttribute(ele);
+  setTimeout(() => {
+    if (document.querySelectorAll("#navigationContainer .active").length > 1) {
+      document.getElementById("mainNav").classList.add("second-level-opened");
+    } else {
+      document
+        .getElementById("mainNav")
+        .classList.remove("second-level-opened");
+    }
+    toggleAriaAttribute(ele);
+  }, 110);
 }
 
 //close all opened menu lists before opening a new one
