@@ -80,7 +80,6 @@
   width: 100%;
 
   ul {
-    list-style: none;
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
@@ -122,6 +121,25 @@
     > ul > li {
       padding: 1.5rem 0;
     }
+    height: 70px;
+    overflow: visible;
+    .has-subitems {
+      &.active {
+        > a:before {
+          border-bottom-color: $primary;
+        }
+        > .sub-list-container {
+          a,
+          a:visited {
+            color: $gray-light;
+          }
+        }
+      }
+      > .sub-list-container {
+        background: $primary;
+        top: 70px;
+      }
+    }
   }
   &.active {
     > a {
@@ -143,27 +161,6 @@
     }
     > a:after {
       transform: rotate(-45deg);
-    }
-    > .sub-list-container {
-      height: 70px;
-      overflow: visible;
-      .has-subitems {
-        &.active {
-          > a:before {
-            border-bottom-color: $primary;
-          }
-          > .sub-list-container {
-            a,
-            a:visited {
-              color: $gray-light;
-            }
-          }
-        }
-        > .sub-list-container {
-          background: $primary;
-          top: 70px;
-        }
-      }
     }
   }
 }
@@ -271,56 +268,20 @@
     &.expanded {
       left: 0;
     }
-    .main-list-item {
-      position: relative;
-      width: 100%;
-      &.active {
-        > .sub-list-container > ul > li {
-          padding: 0.35rem 0;
-          &:not(:last-child) {
-            border-bottom: 1px solid $gray-light;
-          }
-        }
-      }
-    }
     > .main-list-item {
       padding: 1rem 0;
       height: auto !important;
       &:not(:last-child) {
         border-bottom: 2px solid $white;
       }
-      &.active {
+      &.has-subitems {
         > .sub-list-container {
-          height: auto !important;
-          .has-subitems {
-            a:after {
-              content: "+";
-              position: absolute;
-              right: 10px;
-              color: $primary;
-              font-size: 1.25rem;
-              border: none;
-              transform: none;
-              top: auto;
-              left: auto;
-            }
-            &.active {
-              > a:after {
-                content: "-";
-              }
-            }
-            > .sub-list-container {
-              margin-top: 0.5rem;
-              top: 0;
-            }
-            &.active {
-              > .sub-list-container {
-                height: auto;
-              }
-            }
-          }
-          > ul > li {
-            padding: 0.5rem 0;
+          margin-top: 0.5rem;
+          top: 0;
+        }
+        &.active {
+          > .sub-list-container {
+            height: auto;
           }
         }
       }
@@ -329,7 +290,7 @@
         flex-direction: column;
         align-items: flex-start;
         position: relative !important;
-        top: 0;
+        top: 0 !important;
         > ul {
           gap: 0.5rem;
           padding: 0;
@@ -340,28 +301,47 @@
           margin-top: 0.5rem;
         }
       }
-      &.has-subitems {
-        > a:after {
-          content: "+";
-          position: absolute;
-          right: 10px;
-          color: $primary;
-          font-size: 1.25rem;
-          border: none;
-          transform: none;
-          top: auto;
-          left: auto;
-        }
-        &.has-subitems.active {
-          > a:after {
-            content: "-";
-          }
-        }
-      }
       a {
         width: 100%;
         display: block;
         padding: 0 0.5rem;
+      }
+    }
+    .main-list-item {
+      position: relative;
+      width: 100%;
+      padding: 0 !important;
+      > .sub-list-container {
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        > ul > li {
+          padding: 0;
+          > a {
+            padding: 0.8rem 0.4rem !important;
+          }
+          &:not(:last-child) {
+            border-bottom: 1px solid $gray-light;
+          }
+        }
+      }
+      &.active {
+        > .sub-list-container {
+          max-height: 200px !important;
+          overflow: auto;
+        }
+        > a {
+          &:before {
+            content: none;
+          }
+        }
+      }
+      > a {
+        padding: 0.8rem 0.4rem !important;
+        &:after{
+            float: right;
+            margin-right: 0.8rem;
+        }
       }
     }
   }
