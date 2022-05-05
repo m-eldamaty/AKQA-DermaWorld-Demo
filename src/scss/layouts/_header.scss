@@ -118,6 +118,11 @@
       color: #929292;
     }
   }
+  > .sub-list-container {
+    > ul > li {
+      padding: 1.5rem 0;
+    }
+  }
   &.active {
     > a {
       font-weight: 300;
@@ -142,10 +147,6 @@
     > .sub-list-container {
       height: 70px;
       overflow: visible;
-      z-index: 2;
-      > ul > li {
-        padding: 1.5rem 0;
-      }
       .has-subitems {
         &.active {
           > a:before {

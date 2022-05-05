@@ -9,14 +9,15 @@ for (var i = 0; i < menuItemToggle.length; i++) {
 // toggle menu lists
 function toggleSubItems(ele) {
   toggleOthers(ele.parentElement, ele);
-  for (i = 0; i < menuItemToggle.length; i++) {
-    ele.parentElement.classList.toggle("active");
-  }
-    if(document.querySelectorAll('#navigationContainer .active').length > 1){
-    document.getElementById('mainNav').classList.add('second-level-opened')
-  }
-  else{
-    document.getElementById('mainNav').classList.remove('second-level-opened')
+  setTimeout(() => {
+    for (i = 0; i < menuItemToggle.length; i++) {
+      ele.parentElement.classList.toggle("active");
+    }
+  }, 100);
+  if (document.querySelectorAll("#navigationContainer .active").length > 1) {
+    document.getElementById("mainNav").classList.add("second-level-opened");
+  } else {
+    document.getElementById("mainNav").classList.remove("second-level-opened");
   }
   toggleAriaAttribute(ele);
 }
